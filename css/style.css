@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: "Helvetica", sans-serif;
-    background-image: url(/img/background.jpg);
+    background: url(/img/background.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,7 +51,8 @@ body {
 }
 
 #search input {
-    background-image: url(/img/search.png);
+    background: url(/img/search.png);
+    background-color: white;
     background-repeat: no-repeat;
     background-position: right;
     width: 100%;
@@ -109,10 +110,10 @@ body {
   height: 0;
 }
 
-#nav li {
+#nav ul li {
     display: inline-block;
     text-align: center;
-    width: 160px;
+    width: 162px;
 }
 
 #nav ul li a {
@@ -245,7 +246,7 @@ body {
 #footer h6 {
     color: grey;
     font-size: 12px;
-    padding-top: 6px;
+    padding-top: 8px;
     padding-left: 20px;
 }
 
