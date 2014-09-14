@@ -145,9 +145,6 @@ h4 {
 #nav {
     height: 40px;
     padding: 0;
-    background: -moz-linear-gradient(white, lightgrey);
-    background: -webkit-linear-gradient(white, lightgrey);
-    background: linear-gradient(white, lightgrey);
     background: url(../img/navbar.png);
     border-bottom: 1px solid #BDBDBD;
 }
