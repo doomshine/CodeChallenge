@@ -236,6 +236,7 @@ h4 {
     color: #0084D9;
 }
 #hero-thumbs li.active img {
+    -ms-box-shadow: 0 0 0 3px #0084D9;
     -moz-box-shadow: 0 0 0 3px #0084D9;
     -webkit-box-shadow: 0 0 0 3px #0084D9;
     box-shadow: 0 0 0 3 #0084D9;
