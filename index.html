@@ -11,7 +11,7 @@
 </head>
 
 <div id="mainwrap">
-    <header>
+    <div id="header">
 <!--------------------------- Stuff above the Navigation --------------------------->
         <div id="topbar">
             <div id="top-left">
@@ -41,8 +41,7 @@
                 </div>
             </div>
         </div>
-
-        <nav id="nav">
+        <div id="nav">
             <ul>
                 <li><a href="#">DESTINATIONS</a>
                 </li>
@@ -50,15 +49,21 @@
                 </li>
                 <li><a href="#">TRAVEL TIPS</a>
                 </li>
-                <li class="active"><a href="#">NEWS &amp; FEATURES</a>
-                </li>
+
+                <div id="table-cell">
+                    <div id="active-position">
+                        <li class="active"><a href="#">NEWS &amp; FEATURES</a>
+                        </li>
+                    </div>
+                </div>
+
                 <li><a href="#">CONTESTS</a>
                 </li>
                 <li><a href="#">CONTACT US</a>
                 </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
 
 <!--------------------------- Everything below the navigation --------------------------->
 
@@ -136,7 +141,7 @@
                                 <img src="img/rushmore.jpg" alt="Mount Rushmore" />
                             </a>
                         </li>
-                        <li id="stretch"></li>
+                        <li class="stretch"></li>
                         <!---to justify the thumbnails--->
                     </ul>
                 </div>
@@ -371,7 +376,7 @@
 
         </div>
 <!---------------------------- Page Footer ---------------------------->
-        <footer id="footer">
+        <div id="footer">
 
             <div id="bottom-left">
                 <ul>
@@ -422,7 +427,7 @@
                 </ul>
             </div>
 
-        </footer>
+        </div>
 
     </body>
 </div>
