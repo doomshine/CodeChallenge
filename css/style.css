@@ -347,6 +347,7 @@ h4 {
     width: 470px;
     height: 409px;
     float: right;
+
     position: relative;
     display: inline-block;
 }
@@ -383,6 +384,7 @@ h4 {
 ==============================================================*/
 #video {
     display: inline-block;
+    top: 0;
 }
 #video-top {
     background: url(../img/video.png) no-repeat 10px 10px;
