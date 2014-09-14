@@ -231,6 +231,7 @@ h4 {
     color: #0084D9;
 }
 #hero-thumbs li.active img {
+    -ms-box-shadow: 0 0 0 3px #0084D9;
     -moz-box-shadow: 0 0 0 3px #0084D9;
     -webkit-box-shadow: 0 0 0 3px #0084D9;
     box-shadow: 0 0 0 3px #0084D9;
@@ -312,6 +313,7 @@ h4 {
     position: relative;
     right: 11px;
     bottom: 9px;
+    -ms-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
@@ -350,7 +352,7 @@ h4 {
     float: right;
     top: 0;
     position: relative;
-    display: inline-block;
+    display: inline;
 }
 #article-top {
     width: 470px;
@@ -405,6 +407,7 @@ h4 {
     position: relative;
     right: 11px;
     bottom: 19px;
+    -ms-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
@@ -436,6 +439,7 @@ h4 {
     line-height: 31px;
     padding-left: 14px;
     color: #252525;
+    -ms-filter: opacity(0.9);
     -moz-filter: opacity(0.9);
     -webkit-filter: opacity(0.9);
     filter: opacity(0.9);
