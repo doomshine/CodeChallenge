@@ -381,7 +381,9 @@ h4 {
 /*==============================================================
                         VIDEOS
 ==============================================================*/
-
+#video {
+    display: inline-block;
+}
 #video-top {
     background: url(../img/video.png) no-repeat 10px 10px;
     background-color: #0084D9;
