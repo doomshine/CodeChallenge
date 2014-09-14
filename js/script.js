@@ -1,37 +1,36 @@
-$( document ).ready(function() {
-  var currentSlide = 1;
-  var numberOfSlides = $('#hero-images li').length;
+$(document).ready(function () {
+    var activeSlide = 1;
+    var numberOfSlides = 4;
 
-  function changeSlideTo(slideNumber) {
-    $("#hero-images .active").removeClass('active');
-    $("#hero-images .hero-slide:nth-child(" + slideNumber + ")").addClass('active');
-    $('#hero-thumbs .active').removeClass('active');
-    $("#hero-thumbs li:nth-child(" + slideNumber + ")").addClass('active');
-  }
-
-  function incrementSlide () {
-    if (currentSlide == numberOfSlides) {
-      currentSlide = 1;
+    function changeTo(slideNumber) {
+        $("#hero-images .active").removeClass("active");
+        $("#hero-images .hero-slide:nth-child(" + slideNumber + ")").addClass("active");
+        $("#hero-thumbs .active").removeClass("active");
+        $("#hero-thumbs li:nth-child(" + slideNumber + ")").addClass("active");
     }
-    else {
-      currentSlide = currentSlide + 1;
+
+    function incrementSlide() {
+        if (activeSlide == numberOfSlides) {
+            activeSlide = 1;
+        } else {
+            activeSlide = activeSlide + 1;
+        }
+        changeTo(activeSlide);
     }
-    changeSlideTo(currentSlide);
-  }
 
-  $('#hero-thumbs .thumb').on('click', function(e) {
-    e.preventDefault();
-    $this = $(this);
-    thumbNumber = $this.data("thumb-number");
-    currentSlide = thumbNumber;
-    changeSlideTo(currentSlide);
-  });
+    $('#hero-thumbs .thumb').on('click', function (event) {
+        event.preventDefault();
+        $this = $(this);
+        thumbNumber = $this.data("thumb-number");
+        activeSlide = thumbNumber;
+        changeTo(activeSlide);
+    });
 
-  setInterval(function(){
-    var isHovered = $('#hero').is(":hover");
-    if (!isHovered) {
-        incrementSlide();
-    };
-  }, 5000);
+    setInterval(function () {
+        var hover = $("#hero").is(":hover");
+        if (!hover) {
+            incrementSlide();
+        };
+    }, 4500);
 
 });
