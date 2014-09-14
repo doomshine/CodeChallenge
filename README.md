@@ -6,4 +6,5 @@ Given a PSD, my challenege was to re-create a static webpage that could be easil
 
 I have extrapolated on a few items not show, such as making sure each link changes color to ensure users what is clickable and what isnt. Link areas are as large as possible to ensure ease of use.
 
-No additional frameworks were utilized, everything is hand-coded and heavily googled
+No additional frameworks (Apart from reset.css to ensure cross-browser compatibility) were used. Everything was hand written and heavily googled.
+
