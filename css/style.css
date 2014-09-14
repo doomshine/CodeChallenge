@@ -149,7 +149,7 @@ h4 {
     background: -webkit-linear-gradient(white, lightgrey);
     background: linear-gradient(white, lightgrey);
     border-bottom: 1px solid #BDBDBD;
-    background: url(../img/navbar.png)
+    background: url(../img/navbar.png);
 }
 #nav li {
     display: table-cell;
