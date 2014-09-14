@@ -7,6 +7,7 @@ $(document).ready(function () {
         $("#hero-images .hero-slide:nth-child(" + slideNumber + ")").addClass("active");
         $("#hero-thumbs .active").removeClass("active");
         $("#hero-thumbs li:nth-child(" + slideNumber + ")").addClass("active");
+        //sets active image and thumbnail
     }
 
     function incrementSlide() {
@@ -24,13 +25,15 @@ $(document).ready(function () {
         thumbNumber = $this.data("thumb-number");
         activeSlide = thumbNumber;
         changeTo(activeSlide);
+        // move to clicked thumbnail
     });
 
     setInterval(function () {
         var hover = $("#hero").is(":hover");
         if (!hover) {
             incrementSlide();
+            // stop on hovered slide or thumbnail
         };
     }, 4500);
-
+    // incrementally changes active slide
 });

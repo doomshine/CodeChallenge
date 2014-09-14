@@ -1,11 +1,12 @@
-/* PAGE SETTINGS */
+/*==============================================================
+                        PAGE SETTINGS
+==============================================================*/
 
 a {
     color: inherit;
     text-decoration: none;
 }
-body {
-    font-family: "Helvetica", "Arial", sans-serif;
+html {
     background-image: url(../img/background.jpg);
     background-position: top;
     background-size: cover;
@@ -20,11 +21,70 @@ body {
     width: 1000px;
     margin: 0px auto;
     z-index: 2;
+    font-family: "Helvetica", "Arial", sans-serif;
 }
-.post:hover{
+.post:hover {
     color: #0084D9;
+    /* hover for post */
 }
-/* TOP OF THE PAGE */
+#above {
+    height: 460px;
+    width: 1000px;
+    /* above the fold */
+}
+hr.divider {
+    width: 960px;
+    height: 1px;
+    border: 0;
+    background-color: #CCCDCD;
+    margin: 0 auto;
+    padding: 0;
+    /* horizontal rule for between top and bottom of page */
+}
+#below {
+    height: 860px;
+    width: 1000px;
+    /* below the fold */
+}
+#body-left {
+    float: left;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 682px;
+    /* below the fold - left side of page */
+}
+#body-left h1 {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 33px;
+    line-height: 12px;
+}
+#body-right {
+    float: right;
+    padding-top: 21px;
+    padding-right: 19px;
+    /* below the fold - right side of page */
+}
+.horizontal {
+    width: 254px;
+    height: 1px;
+    background-color: #2A2A2A;
+    border: 0px;
+    /* horizontal rule for newsletter and contests */
+}
+h4 {
+    color: #282B2E;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 31px;
+}
+/*==============================================================
+                        TOP OF THE PAGE
+==============================================================*/
 
 #topbar {
     display: block;
@@ -60,7 +120,7 @@ body {
     text-align: left;
     width: 260px;
     color: white;
-    margin-top: 16px;
+    margin: 16px auto 0px;
     padding-left: 8px;
 }
 #user-tools ul li {
@@ -76,8 +136,9 @@ body {
     width: 1px;
     height: 14px;
 }
-
-/* NAVIGATION */
+/*==============================================================
+                        NAVIGATION
+==============================================================*/
 
 #nav {
     height: 40px;
@@ -114,30 +175,27 @@ body {
     height: 45px;
     border-left: 1px solid #9c9fa3;
     border-right: 1px solid #9c9fa3;
+    /* shows current page */
 }
 #nav li.active a {
     position: relative;
     top: 4px;
     color: #282b2e;
 }
+/*==============================================================
+                    HERO IMAGE CAROUSEL
+==============================================================*/
 
-/* ABOVE THE FOLD */
-
-#above {
-    height: 460px;
-    width: 1000px;
-}
-/* FEATURED CAROUSEL */
 #hero {
     float: left;
     padding-top: 20px;
     padding-left: 20px;
-    height: 100%;
+    /* image carousel box */
 }
 #hero-images ul {
     position: relative;
 }
-#hero-images li{
+#hero-images li {
     position: absolute;
     visibility: hidden;
 }
@@ -155,6 +213,7 @@ body {
     -o-filter: opacity(0.9);
     -webkit-filter: opacity(0.9);
     filter: opacity(0.9);
+    /* Hero Image description */
 }
 .hero-text h1 {
     padding-left: 12px;
@@ -162,21 +221,23 @@ body {
     font-weight: bold;
     font-size: 24px;
 }
-.hero-slide:hover .hero-text h1 {
-    color: #0084D9;
-}
 .hero-text h2 {
     padding-left: 12px;
     padding-top: 4px;
     font-size: 14px;
 }
+.hero-slide:hover .hero-text h1 {
+    color: #0084D9;
+}
 #hero-thumbs li.active img {
     -moz-box-shadow: 0 0 0 3px #0084D9;
     -webkit-box-shadow: 0 0 0 3px #0084D9;
     box-shadow: 0 0 0 3 #0084D9;
+    /* border of active thumbnail, doesnt mess with positioning */
 }
 #hero-thumbs li.active .arrow {
     visibility: visible;
+    /* little blue arrow that shows above the active thumbnail */
 }
 #hero-thumbs {
     position: relative;
@@ -185,6 +246,22 @@ body {
     display: block;
     width: 666px;
     text-align: justify;
+}
+#hero-thumbs li {
+    position: relative;
+    top: 10px;
+    width: 157px;
+    height: 79px;
+    display: inline;
+}
+#hero-thumbs img {
+    width: 157px;
+    height: 79px;
+}
+#hero-thumbs #stretch {
+    display: inline-block;
+    width: 100%;
+    /* keeps thumbnails inline */
 }
 .arrow {
     position: absolute;
@@ -195,23 +272,9 @@ body {
     bottom: 83px;
     visibility: hidden;
 }
-#hero-thumbs li {
-    position: relative;
-    top: 10px;
-    width: 157px;
-    height: 79px;
-    display: inline;
-}
-#hero-thumbs img{
-    width: 157px;
-    height: 79px;
-}
-#hero-thumbs #stretch {
-    display: inline-block;
-    width: 100%;
-}
-
-/* ADVERTISETMENTS */
+/*==============================================================
+                        ADVERTISEMENTS
+==============================================================*/
 
 #ads {
     float: right;
@@ -226,44 +289,10 @@ body {
     margin: 0;
     padding: 0;
 }
+/*==============================================================
+                        BROWSE CATEGORIES
+==============================================================*/
 
-/* BELOW THE FOLD */
-hr.divider {
-    width: 960px;
-    height: 1px;
-    border: 0;
-    background-color: #CCCDCD;
-    margin: 0 auto;
-    padding: 0;
-}
-
-#below {
-    height: 860px;
-    width: 1000px;
-}
-#body-left {
-    float: left;
-    padding-top: 20px;
-    padding-right: 20px;
-    width: 682px;
-}
-#body-left h1 {
-    color: white;
-    font-size: 12px;
-    text-align: center;
-    display: inline-block;
-    font-weight: bold;
-    padding-left: 33px;
-    line-height: 12px;
-}
-
-
-
-
-
-
-
-/* BROWSE */
 #browse-top {
     background: url(../img/folder.png);
     background-repeat: no-repeat;
@@ -287,6 +316,7 @@ hr.divider {
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
     z-index: -1;
+    /* shadow beneath banner */
 }
 #browse {
     width: 196px;
@@ -294,7 +324,8 @@ hr.divider {
     display: block;
     font-size: 14px;
 }
-#browse ul, #browse h2 {
+#browse ul,
+#browse h2 {
     padding-left: 20px;
 }
 #browse h2 {
@@ -308,7 +339,10 @@ hr.divider {
 #browse li a:hover {
     color: #0084D9;
 }
-/* ARTICLES */
+/*==============================================================
+                        ARTICLES
+==============================================================*/
+
 #article {
     width: 470px;
     height: 409px;
@@ -334,19 +368,22 @@ hr.divider {
 #article .post img {
     float: left;
 }
-#article .post h2{
+#article .post h2 {
     font-weight: bold;
     padding-bottom: 9px;
 }
-#article .post h2, .post p{
+#article .post h2,
+.post p {
     float: right;
     width: 300px;
 }
-#article .post p{
+#article .post p {
     line-height: 16px;
 }
+/*==============================================================
+                        VIDEOS
+==============================================================*/
 
-/* VIDEOS */
 #video-top {
     background: url(../img/video.png);
     background-repeat: no-repeat;
@@ -372,6 +409,7 @@ hr.divider {
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
     z-index: -1;
+    /* shadow beneath banner */
 }
 #video-wrap {
     padding-left: 20px;
@@ -385,7 +423,7 @@ hr.divider {
     margin-right: 16px;
     margin-top: -4px;
 }
-#video .post:hover .video-text{
+#video .post:hover .video-text {
     color: #0084D9;
 }
 #video .video-text {
@@ -411,26 +449,10 @@ hr.divider {
     margin: 0px auto;
     bottom: 144px;
 }
-/* BELOW - RIGHT SIDE */
-#body-right {
-    float: right;
-    padding-top: 21px;
-    padding-right: 19px;
-}
-.horizontal {
-    width: 254px;
-    height: 1px;
-    background-color: #2A2A2A;
-    border: 0px;
-}
-h4 {
-    color: #282B2E;
-    font-size: 12px;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-left: 31px;
-}
-/* NEWSLETTER SIGNUP */
+/*==============================================================
+                        NEWSLETTER
+==============================================================*/
+
 #newsletter {
     background: url(../img/mail.png);
     background-repeat: no-repeat;
@@ -440,10 +462,11 @@ h4 {
     height: 203px;
     border-bottom: solid 1px #9c9fa3;
 }
-#newsletter-form{
+#newsletter-form {
     width: 254px;
     margin: 0 auto;
-}#newsletter-form p{
+}
+#newsletter-form p {
     font-size: 12px;
     font-style: oblique;
 }
@@ -460,6 +483,7 @@ h4 {
     height: 78px;
     margin: 10px auto;
     background-color: #CAC9C9;
+    /* checkboxes */
 }
 #newsletter-options p {
     font-size: 12px;
@@ -498,7 +522,7 @@ h4 {
     text-align: center;
     font-size: 12px;
 }
-#newsletter-bottom h3 a:hover{
+#newsletter-bottom h3 a:hover {
     color: #0084D9;
 }
 #newsletter-bottom hr {
@@ -509,7 +533,10 @@ h4 {
     height: 14px;
     border-left: solid 1px #282B2E;
 }
-/* CONTESTS */
+/*==============================================================
+                        CONTESTS
+==============================================================*/
+
 #contests {
     background: url(../img/trophy.png);
     background-repeat: no-repeat;
@@ -536,12 +563,17 @@ h4 {
     float: left;
     padding-left: 10px;
 }
+/*==============================================================
+                        THAT ONE TWITTER WIDGET
+==============================================================*/
+
 #twitter {
     width: 274px;
     display: block;
 }
-
-/* FOOTER */
+/*==============================================================
+                        PAGE FOOTER
+==============================================================*/
 
 #footer {
     height: 66px;
@@ -555,6 +587,7 @@ h4 {
     margin: 0 9px;
     width: 1px;
     height: 14px;
+    /* divider between list items */
 }
 #footer ul {
     padding-top: 14px;
@@ -573,13 +606,14 @@ h4 {
     padding-top: 8px;
     padding-left: 20px;
 }
-.vertical-grey{
+.vertical-grey {
     display: inline;
     padding: 0px;
     margin: 0 9px;
     width: 1px;
     height: 14px;
     border-color: grey;
+    /* divider between list items */
 }
 #footer #bottom-left {
     float: left;
