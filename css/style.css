@@ -36,28 +36,28 @@ body {
     width: 400px;
 }
 #top-right {
+    padding-top: 14px;
     float: right;
 }
 #search {
-    width: 260px;
+    width: 259px;
 }
 #search input {
     background: url(../img/search.png);
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-color: white;
-    width: 100%;
-    height: 24px;
+    width: 259px;
+    height: 22px;
     font-size: 12px;
     padding-left: 8px;
     border: 0;
-    box-shadow: inset 0px 1px 3px lightgrey;
+    box-shadow: inset 0px 0px 12px lightgrey;
 }
 #user-tools {
-    float: right;
     font-size: 12px;
     display: block;
-    text-align: center;
+    text-align: left;
     width: 260px;
     color: white;
     margin-top: 16px;
@@ -80,7 +80,6 @@ body {
 /* NAVIGATION */
 
 #nav {
-    display: block;
     height: 40px;
     padding: 0;
     background: -webkit-linear-gradient(white, lightgrey);
@@ -89,16 +88,8 @@ body {
     background: linear-gradient(white, lightgrey);
     border-bottom: 1px solid #BDBDBD;
 }
-#nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: table;
-    width: 100%;
-}
 #nav li {
     display: table-cell;
-    text-align: center;
     width: 167px;
 }
 #nav ul li a {
@@ -106,8 +97,8 @@ body {
     font-family: "Helvetica", sans-serif;
     font-weight: bold;
     font-size: 12px;
-    color: #252525;
-    text-shadow: 0px 0px 1px white;
+    color: #6B6D6E;
+    text-shadow: 1px 0px 1px #FFFFFF;
     text-decoration: none;
     line-height: 42px;
     text-align: center;
@@ -137,17 +128,25 @@ body {
     width: 1000px;
 }
 /* FEATURED CAROUSEL */
-#carousel {
+#hero {
     float: left;
     padding-top: 20px;
     padding-left: 20px;
+    height: 100%;
 }
-#main {
-    height: 331px;
-}
-#feattext {
+#hero-images ul {
     position: relative;
-    bottom: 71px;
+}
+#hero-images li{
+    position: absolute;
+    visibility: hidden;
+}
+#hero-images li.active {
+    visibility: visible;
+}
+.hero-text {
+    position: relative;
+    bottom: 70px;
     width: 666px;
     height: 68px;
     background-color: #cecece;
@@ -157,27 +156,63 @@ body {
     -webkit-filter: opacity(0.9);
     filter: opacity(0.9);
 }
-#feattext h1 {
+.hero-text h1 {
     padding-left: 12px;
     padding-top: 12px;
     font-weight: bold;
     font-size: 24px;
 }
-#main:hover h1 {
+.hero-slide:hover .hero-text h1 {
     color: #0084D9;
 }
-#main:hover #feattext {
-    -moz-filter: opacity(1);
-    -o-filter: opacity(1);
-    -webkit-filter: opacity(1);
-    filter: opacity(1);
-}
-#feattext h2 {
+.hero-text h2 {
     padding-left: 12px;
     padding-top: 4px;
     font-size: 14px;
 }
+#hero-thumbs li.active img {
+    -moz-box-shadow: 0 0 0 3px #0084D9;
+    -webkit-box-shadow: 0 0 0 3px #0084D9;
+    box-shadow: 0 0 0 3 #0084D9;
+}
+#hero-thumbs li.active .arrow {
+    visibility: visible;
+}
+#hero-thumbs {
+    position: relative;
+    top: 333px;
+    height: 96px;
+    display: block;
+    width: 666px;
+    text-align: justify;
+}
+.arrow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url(../img/thumb-active.png);
+    left: 74px;
+    bottom: 83px;
+    visibility: hidden;
+}
+#hero-thumbs li {
+    position: relative;
+    top: 10px;
+    width: 157px;
+    height: 79px;
+    display: inline;
+}
+#hero-thumbs img{
+    width: 157px;
+    height: 79px;
+}
+#hero-thumbs #stretch {
+    display: inline-block;
+    width: 100%;
+}
+
 /* ADVERTISETMENTS */
+
 #ads {
     float: right;
     width: 274px;
@@ -193,7 +228,6 @@ body {
 }
 
 /* BELOW THE FOLD */
-
 hr.divider {
     width: 960px;
     height: 1px;
@@ -222,6 +256,13 @@ hr.divider {
     padding-left: 33px;
     line-height: 12px;
 }
+
+
+
+
+
+
+
 /* BROWSE */
 #browse-top {
     background: url(../img/folder.png);
@@ -408,10 +449,11 @@ h4 {
 }
 #subscriber-email {
     border: 0;
-    padding-left: 8px;
-    width: 247px;
+    padding-left: 10px;
+    width: 244px;
     height: 26px;
     font-size: 12px;
+    box-shadow: inset 0px 0px 6px lightgrey;
 }
 #newsletter-options {
     width: 254px;
@@ -431,7 +473,6 @@ h4 {
     padding-top: 5px;
     padding-left: 8px;
 }
-
 #newsletter-options label input[type=checkbox] {
     position: relative;
     vertical-align: middle;

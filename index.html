@@ -64,16 +64,77 @@
         <div id="bodywrap">
 
             <div id="above">
-                <div id="carousel">
-                    <div id="main">
-                        <a href="#">
-                            <img id="featimg" src="img/baltimore.jpg" alt="Downtown Baltimore" />
-                        </a>
-                        <div id="feattext">
-                            <a href="#"><h1>DOWNTOWN BALTIMORE</h1>
-                                <h2>Check out the USS Torsk at Baltimore's historic Maritime Museum</h2></a>
-                        </div>
-                    </div>
+                <div id="hero">
+
+                    <ul id="hero-images">
+
+                        <li class="hero-slide active">
+                            <a href="#">
+                                <img class="hero-img" src="img/baltimore.jpg" alt="Downtown Baltimore" />
+                                <div class="hero-text">
+                                    <h1>DOWNTOWN BALTIMORE</h1>
+                                    <h2>Check out the USS Torsk at Baltimore's historic Maritime Museum</h2>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="hero-slide">
+                            <a href="#">
+                                <img class="hero-img" src="img/venetian.jpg" alt="The Venetian Hotel" />
+                                <div class="hero-text">
+                                    <h1>THE VENETIAN HOTEL</h1>
+                                    <h2>Tips on backing up your Cell Phone before you drop it in the canal</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="hero-slide">
+                            <a href="#">
+                                <img class="hero-img" src="img/london.jpg" alt="Westminster Abbey" />
+                                <div class="hero-text">
+                                    <h1>WESTMINSTER ABBEY</h1>
+                                    <h2>Remember, Remember: November 5th Discount Special</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="hero-slide">
+                            <a href="#">
+                                <img class="hero-img" src="img/rushmore.jpg" alt="Mount Rushmore" />
+                                <div class="hero-text">
+                                    <h1>MOUNT RUSHMORE</h1>
+                                    <h2>Can you find the gold hidden in Roosevelts nose?</h2>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul id="hero-thumbs">
+                        <li class="thumb active" data-thumb-number=1>
+                            <a href="#">
+                                <div class="arrow"></div>
+                                <img src="img/baltimore.jpg" alt="Downtown Baltimore" />
+                            </a>
+                        </li>
+                        <li class="thumb" data-thumb-number=2>
+                            <a href="#">
+                                <div class="arrow"></div>
+                                <img src="img/venetian.jpg" alt="The Venetian Hotel" />
+                            </a>
+                        </li>
+                        <li class="thumb" data-thumb-number=3>
+                            <a href="#">
+                                <div class="arrow"></div>
+                                <img src="img/london.jpg" alt="Westminster Abbey" />
+                            </a>
+                        </li>
+                        <li class="thumb" data-thumb-number=4>
+                            <a href="#">
+                                <div class="arrow"></div>
+                                <img src="img/rushmore.jpg" alt="Mount Rushmore" />
+                            </a>
+                        </li>
+                        <li id="stretch"></li>
+                    </ul>
                 </div>
 
                 <div id="ads">
@@ -245,10 +306,12 @@
                                 <p>Select the newsletters you'd like to see</p>
                                 <ul>
                                     <li>
-                                        <label><input type="checkbox" name="destinations" id="newsletter-checkbox" checked/>Destinations &amp; Getaways</label>
+                                        <label>
+                                            <input type="checkbox" name="destinations" id="newsletter-checkbox" checked/>Destinations &amp; Getaways</label>
                                     </li>
                                     <li>
-                                        <label><input type="checkbox" name="destinations" id="tips" checked/>Weekly Travel Tips</label>
+                                        <label>
+                                            <input type="checkbox" name="destinations" id="tips" checked/>Weekly Travel Tips</label>
                                     </li>
                                 </ul>
                             </div>
@@ -309,13 +372,13 @@
             <div id="bottom-left">
                 <ul>
                     <li><a href="#">Privacy Policy</a>
-                        <hr class="vertical-white"/>
+                        <hr class="vertical-white" />
                     </li>
                     <li><a href="#">Terms of Use</a>
-                        <hr class="vertical-white"/>
+                        <hr class="vertical-white" />
                     </li>
                     <li><a href="#">Site Map</a>
-                        <hr class="vertical-white"/>
+                        <hr class="vertical-white" />
                     </li>
                     <li><a href="#">Contact Us</a>
                     </li>
@@ -358,5 +421,6 @@
         </footer>
     </div>
 </body>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/script.js"></script>
 </html>
