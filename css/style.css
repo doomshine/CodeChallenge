@@ -15,6 +15,7 @@ html {
 #bodywrap {
     background-color: white;
     width: 1000px;
+    text-align: center;
 }
 #mainwrap {
     padding-top: 17px;
@@ -192,6 +193,7 @@ h4 {
     float: left;
     padding-top: 20px;
     padding-left: 20px;
+    text-align: left;
     /* image carousel box */
 }
 #hero-images ul {
@@ -305,6 +307,7 @@ h4 {
     line-height: 34px;
     position: relative;
     right: 14px;
+    text-align: left;
 }
 #browse-top-bend {
     background-color: #006EB4;
@@ -327,9 +330,8 @@ h4 {
     font-size: 14px;
     display: inline-block;
     top: 0;
-}
-#browse ul, #browse h2 {
-    padding-left: 20px;
+    left: 0;
+    text-align: left;
 }
 #browse h2 {
     font-weight: bold;
@@ -353,6 +355,7 @@ h4 {
     top: 0;
     position: relative;
     display: inline;
+    text-align: left;
 }
 #article-top {
     width: 470px;
@@ -360,6 +363,7 @@ h4 {
     line-height: 34px;
     background: url(../img/article.png) no-repeat 10px 9px;
     background-color: #0084D9;
+    text-align: left;
 }
 #article .post {
     font-size: 14px;
@@ -388,6 +392,7 @@ h4 {
 #video {
     display: inline-block;
     top: 0;
+    text-align: left;
 }
 #video-top {
     background: url(../img/video.png) no-repeat 10px 10px;
@@ -399,6 +404,7 @@ h4 {
     right: 14px;
     margin-top: 20px;
     margin-bottom: 10px;
+    text-align: left;
 }
 #video-top-bend {
     background-color: #006EB4;
@@ -462,6 +468,7 @@ h4 {
     width: 274px;
     height: 203px;
     border-bottom: solid 1px #9c9fa3;
+    text-align: left;
 }
 #newsletter-form {
     width: 254px;
@@ -545,6 +552,7 @@ h4 {
     width: 274px;
     height: 171px;
     margin-bottom: 20px;
+    text-align: left;
 }
 #contests .post {
     width: 264px;
