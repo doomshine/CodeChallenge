@@ -298,7 +298,17 @@ h4 {
 /*==============================================================
                         BROWSE CATEGORIES
 ==============================================================*/
-
+#browse {
+    width: 165px;
+    height: 409px;
+    display: block;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    float: left;
+    left: 20px;
+}
 #browse-top {
     background: url(../img/folder.png) no-repeat 10px 11px;
     background-color: #0084D9;
@@ -322,17 +332,6 @@ h4 {
     transform: rotate(30deg);
     z-index: -1;
     /* shadow beneath banner */
-}
-#browse {
-    width: 165px;
-    height: 409px;
-    display: block;
-    font-size: 14px;
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    float: left;
-    left: 20px;
 }
 #browse h2 {
     font-weight: bold;
