@@ -44,11 +44,11 @@ hr.divider {
 #below {
     height: 860px;
     width: 1000px;
-    display: block;
+    display: inline-block;
     /* below the fold */
 }
 #body-left {
-    display: block;
+    display: inline-block;
     float: left;
     padding-top: 20px;
     width: 687px;
@@ -56,19 +56,20 @@ hr.divider {
     text-align: left;
     /* below the fold - left side of page */
 }
-#body-left h1 {
+#body-left h2 {
     color: white;
     font-size: 12px;
     text-align: center;
-    display: inline-block;
+    display: inline;
     font-weight: bold;
     padding-left: 33px;
     line-height: 12px;
 }
 #body-right {
+    display: inline;
     float: right;
     padding-top: 21px;
-    padding-right: 19px;
+    padding-right: 20px;
     /* below the fold - right side of page */
 }
 .horizontal {
@@ -331,7 +332,7 @@ h4 {
     z-index: -1;
     /* shadow beneath banner */
 }
-#browse h2 {
+#browse h3 {
     font-weight: bold;
     padding-bottom: 9px;
 }
@@ -370,11 +371,11 @@ h4 {
 #article .post img {
     float: left;
 }
-#article .post h2 {
+#article .post h3 {
     font-weight: bold;
     padding-bottom: 9px;
 }
-#article .post h2,
+#article .post h3,
 .post p {
     float: right;
     width: 300px;
