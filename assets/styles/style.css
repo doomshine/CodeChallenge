@@ -48,9 +48,6 @@ html {
     /* below the fold */
 }
 #body-left {
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
     float: left;
     padding-top: 20px;
     width: 687px;
@@ -136,13 +133,11 @@ h4 {
     display: block;
 }
 #user-tools a {
-    color:white;
+    color: white;
     display: inline;
 }
 #user-tools ul li {
     display: inline;
-    zoom: 1;
-    *display: inline;
 }
 #user-tools ul li a:hover {
     color: #252525;
@@ -161,11 +156,11 @@ h4 {
 ==============================================================*/
 
 #nav {
-    zoom: 1;
     height: 40px;
     padding: 0;
     background: url(../images/navbar.png);
     border-bottom: 1px solid #BDBDBD;
+    width: 1000px;
 }
 #nav li {
     display: table-cell;
@@ -227,8 +222,6 @@ h4 {
 #hero-images li {
     position: absolute;
     visibility: hidden;
-    zoom: 1;
-    *display: inline;
 }
 #hero-images li.active {
     visibility: visible;
@@ -274,7 +267,6 @@ h4 {
     width: 666px;
     height: 96px;
     display: block;
-    text-align: justify;
 }
 #hero-thumbs li {
     position: relative;
@@ -286,13 +278,6 @@ h4 {
     border: 3px solid white;
     width: 157px;
     height: 79px;
-}
-#hero-thumbs .stretch {
-    display: inline-block;
-    width: 100%;
-    height: 0;
-    visibility: hidden;
-    /* keeps thumbnails inline */
 }
 .arrow {
     position: absolute;
@@ -409,14 +394,6 @@ h4 {
                         VIDEOS
 ==============================================================*/
 
-#video {
-    display: block;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    float: left;
-    text-align: left;
-}
 #video-top {
     background: url(../images/video.png) no-repeat 10px 10px;
     background-color: #0084D9;
@@ -434,35 +411,52 @@ h4 {
     height: 15px;
     position: relative;
     right: 15px;
-    bottom: 19px;
+    bottom: 9px;
     z-index: -1;
     /* shadow beneath banner */
 }
+
+#video {
+    width: 100%;
+    float: left;
+    display: block;
+}
 #video ul {
-    padding-left: 20px;
+    margin-top: -5px;
 }
+
 #video li {
-    display: inline;
-    padding-right: 16px;
-}
-#video .post {
-    display: inline-block;
     width: 208px;
     height: 156px;
+    float: left;
+    position: relative;
+    top: 10px;
+    display: inline;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#video img {
+    width: 100%;
+    height: auto;
 }
 #video .post:hover .video-text {
     color: #0084D9;
 }
 #video .video-text {
     position: relative;
-    bottom: 33px;
+    display: inline;
+    float: left;
     height: 31px;
     width: 194px;
+    left: 0px;
+    bottom: 34px;
     background-color: #cecece;
     font-size: 13px;
     font-weight: bold;
     line-height: 31px;
     padding-left: 14px;
+    z-index: 3;
     color: #252525;
     -ms-filter: opacity(0.9);
     -moz-filter: opacity(0.9);
@@ -474,9 +468,9 @@ h4 {
     width: 49px;
     height: 49px;
     position: relative;
-    margin: 0px auto;
     bottom: 144px;
 }
+
 /*==============================================================
                         NEWSLETTER
 ==============================================================*/
