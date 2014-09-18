@@ -615,7 +615,7 @@ h4 {
     background-color: #282b2e;
     display: block;
 }
-hr.vertical-white {
+#footer hr.vertical-white {
     display: inline;
     padding: 0px;
     margin: 0 9px;
@@ -628,6 +628,7 @@ hr.vertical-white {
 #footer ul {
     padding-top: 14px;
     padding-bottom: 6px;
+    display: block;
 }
 #footer ul li {
     font-size: 12px;
@@ -645,7 +646,7 @@ hr.vertical-white {
     color: grey;
     font-size: 12px;
 }
-hr.vertical-grey {
+#footer hr.vertical-grey {
     display: inline;
     padding: 0px;
     margin: 0 9px;
