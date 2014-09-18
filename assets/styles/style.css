@@ -25,7 +25,6 @@ html {
 }
 .post:hover {
     color: #0084D9;
-    /* hover for post */
 }
 #above {
     height: 460px;
@@ -95,17 +94,24 @@ h4 {
 #topbar {
     display: block;
     height: 110px;
+    width: 1000px;
 }
 #top-left {
     float: left;
     display: inline-block;
-    width: 400px;
+    width: 500px;
 }
 #top-right {
     padding-top: 14px;
     float: right;
+    width: 500px;]
+    height: 100%;
 }
 #search {
+    display: block;
+    position: relative;
+    right: 8px;
+    float: right;
     width: 259px;
 }
 #search input {
@@ -119,6 +125,7 @@ h4 {
     box-shadow: inset 0px 0px 12px lightgrey;
 }
 #user-tools {
+    float: right;
     font-size: 12px;
     display: block;
     text-align: left;
@@ -130,6 +137,7 @@ h4 {
 }
 #user-tools a {
     color:white;
+    display: inline;
 }
 #user-tools ul li {
     display: inline;
@@ -435,11 +443,13 @@ h4 {
     padding-left: 20px;
     white-space: nowrap;
     overflow: hidden;
+    width: 666px;
+    height: 332px;
+    float: left;
 }
 #video .post {
     display: inline-block;
     zoom: 1;
-    *display; inline;
     width: 208px;
     height: 156px;
     margin-top: -4px;
@@ -514,12 +524,16 @@ h4 {
     padding-top: 10px;
     padding-left: 12px;
 }
+#newsletter-options ul li{
+    display: block;
+}
 #newsletter-options label {
     float: left;
     font-size: 12px;
     font-weight: bold;
     padding-top: 5px;
     padding-left: 8px;
+    display: inline;
 }
 #newsletter-options label input[type=checkbox] {
     position: relative;
@@ -538,6 +552,7 @@ h4 {
     font-size: 10px;
 }
 #newsletter-bottom {
+    display: block;
     background-color: #CAC9C9;
     width: 274px;
     height: 24px;
