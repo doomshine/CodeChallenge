@@ -161,6 +161,7 @@ h4 {
 ==============================================================*/
 
 #nav {
+    zoom: 1;
     height: 40px;
     padding: 0;
     background: url(../images/navbar.png);
@@ -184,14 +185,13 @@ h4 {
     text-align: center;
     margin: 0px auto;
 }
-/* this code exists only becuase firefox has issues displaying relatively positioned items table cells because of course it does*/
-
 #nav li:hover {
     background: #bdbdbd;
 }
 #table-cell {
     display: table-cell
 }
+/* this code exists only becuase firefox has issues displaying relatively positioned items table cells because of course it does*/
 #active-position {
     position: relative;
     bottom: 4px;
@@ -426,7 +426,6 @@ h4 {
     position: relative;
     right: 14px;
     margin-top: 20px;
-    margin-bottom: 10px;
     text-align: left;
 }
 #video-top-bend {
@@ -439,22 +438,17 @@ h4 {
     z-index: -1;
     /* shadow beneath banner */
 }
-#video-wrap {
+#video ul {
     padding-left: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 666px;
-    height: 332px;
-    float: left;
+}
+#video li {
+    display: inline;
+    padding-right: 16px;
 }
 #video .post {
     display: inline-block;
-    zoom: 1;
     width: 208px;
     height: 156px;
-    margin-top: -4px;
-    margin-right: 16px;
-    padding-bottom: 20px;
 }
 #video .post:hover .video-text {
     color: #0084D9;
@@ -644,11 +638,10 @@ hr.vertical-white {
 #footer ul li {
     font-size: 12px;
     display: inline;
-    zoom: 1;
-    *display: inline;
 }
 #footer li a {
     color: white;
+    display: inline;
 }
 #footer li a:hover {
     color: #0084D9;
@@ -669,13 +662,16 @@ hr.vertical-grey {
     /* divider between list items */
 }
 #footer #bottom-left {
+    display: inline;
     float: left;
     padding-left: 20px;
 }
 #footer #bottom-right {
+    display: inline;
     float: right;
     padding-right: 20px;
 }
 #footer .social li {
     padding-left: 4px;
+    display: inline;
 }
