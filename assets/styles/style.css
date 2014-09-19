@@ -23,7 +23,7 @@ html {
     margin: 0px auto;
     font-family: "Helvetica", "Arial", sans-serif;
 }
-.post:hover {
+.post:hover a{
     color: #0084D9;
 }
 #above {
@@ -40,7 +40,6 @@ html {
     margin: 0 auto;
     padding: 0;
     border: 0;
-    border-top: solid 1px #CCCDCD;
     /* horizontal rule for between top and bottom of page */
 }
 #below {
@@ -72,10 +71,12 @@ html {
     /* below the fold - right side of page */
 }
 .horizontal {
+    display: block;
     width: 254px;
     height: 1px;
     background-color: #2A2A2A;
     border: 0px;
+
     /* horizontal rule for newsletter and contests */
 }
 h4 {
@@ -88,6 +89,13 @@ h4 {
 
 hr {
 display: inline;
+}
+
+.vertical-divider {
+    position: relative;
+    bottom: 3px;
+    font-size: 16px;
+    margin: 0 9px;
 }
 
 /*==============================================================
@@ -144,6 +152,8 @@ display: inline;
     display: inline;
 }
 #user-tools ul li {
+    float: left;
+    position: relative;
     display: inline;
 }
 #user-tools ul li a:hover {
@@ -152,6 +162,7 @@ display: inline;
 #user-tools hr {
     display: inline;
     padding: 0px;
+    position: relative;
     margin: 0 9px;
     width: 1px;
     height: 14px;
@@ -163,19 +174,16 @@ display: inline;
 ==============================================================*/
 
 #nav {
-    position: relative;
-    float: left;
     height: 40px;
     padding: 0;
     background: url(../images/navbar.png);
     border-bottom: 1px solid #BDBDBD;
-    width: 1000px;
+    width: 100%;
 }
 #nav li {
     display: table-cell;
     width: 167px;
-    zoom: 1;
-    *display: inline;
+    height: 36px;
 }
 #nav ul li a {
     display: block;
@@ -185,9 +193,8 @@ display: inline;
     color: #6B6D6E;
     text-shadow: 1px 0px 1px #FFFFFF;
     text-decoration: none;
-    line-height: 42px;
+    line-height: 40px;
     text-align: center;
-    margin: 0px auto;
 }
 #nav li:hover {
     background: #bdbdbd;
@@ -509,7 +516,7 @@ display: inline;
     box-shadow: inset 0px 0px 6px lightgrey;
 }
 #newsletter-options {
-    width: 254px;
+    width: 100%;
     height: 78px;
     margin: 10px auto;
     background-color: #CAC9C9;
@@ -517,13 +524,16 @@ display: inline;
     /* checkboxes */
 }
 #newsletter-options p {
+    display: block;
     font-size: 12px;
     padding-top: 10px;
     padding-left: 12px;
 }
 #newsletter-options ul li{
     position: relative;
+    width: 100%;
     display: block;
+    float: left;
 }
 #newsletter-options label {
     float: left;
@@ -548,6 +558,11 @@ display: inline;
     color: white;
     font-weight: bold;
     font-size: 10px;
+}
+#newsletter-content-bottom {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 #newsletter-bottom {
     display: block;
@@ -577,6 +592,10 @@ display: inline;
     border: 0px;
     border-left: solid 1px #282B2E;
     background-color: #CAC9C9;
+}
+
+#newsletter-bottom .vertical-divider {
+    font-size: 16px;
 }
 /*==============================================================
                         CONTESTS
@@ -625,16 +644,6 @@ display: inline;
     background-color: #282b2e;
     display: block;
 }
-#footer hr.vertical-white {
-    display: inline;
-    padding: 0px;
-    margin: 0 9px;
-    width: 1px;
-    height: 14px;
-    border: 0;
-    border-left: 1px solid white;
-    /* divider between list items */
-}
 #footer ul {
     position: relative;
     padding-top: 14px;
@@ -644,6 +653,7 @@ display: inline;
 #footer ul li {
     font-size: 12px;
     display: inline;
+    float: left;
 }
 #footer li a {
     color: white;
@@ -652,20 +662,23 @@ display: inline;
 #footer li a:hover {
     color: #0084D9;
 }
+
+#footer .vertical-divider {
+    font-size: 16px;
+}
+#footer-info {
+    margin-top: 7px;
+    float: left;
+    display: inline;
+}
 #footer h2 {
     display: inline;
     color: grey;
     font-size: 12px;
 }
-#footer hr.vertical-grey {
-    display: inline;
-    padding: 0px;
-    margin: 0 9px;
-    width: 1px;
-    height: 14px;
-    border: 0;
-    border-left: 1px solid grey;
-    /* divider between list items */
+#footer h2.vertical-divider {
+    position: relative;
+    top: 1px;
 }
 #footer #bottom-left {
     display: inline;
