@@ -627,9 +627,11 @@ h4 {
 #footer ul {
     position: relative;
     margin-top: 14px;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
     display: block;
     width: 100%;
+    height: auto;
+    float: left;
 }
 #footer ul li {
     font-size: 12px;
@@ -672,6 +674,8 @@ h4 {
     padding-right: 20px;
 }
 #footer .social li {
+    float: right;
     padding-left: 4px;
     display: inline;
+    margin-top: 6px;
 }
