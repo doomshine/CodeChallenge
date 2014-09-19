@@ -166,9 +166,13 @@ h4 {
     border-bottom: 1px solid #BDBDBD;
     width: 100%;
 }
+#nav ul{
+    float: none;
+    width: 100%;
+}
 #nav li {
     display: table-cell;
-    width: 167px;
+    width: 166.5px;
     height: 36px;
     *float: left;
 }
@@ -622,9 +626,10 @@ h4 {
 }
 #footer ul {
     position: relative;
-    padding-top: 14px;
-    padding-bottom: 6px;
+    margin-top: 14px;
+    margin-bottom: 6px;
     display: block;
+    width: 100%;
 }
 #footer ul li {
     font-size: 12px;
@@ -645,7 +650,7 @@ h4 {
 #footer-info {
     margin-top: 7px;
     float: left;
-    display: inline;
+    display: block;
 }
 #footer h2 {
     float: left;
@@ -655,7 +660,6 @@ h4 {
 }
 #footer h2.vertical-divider {
     position: relative;
-    top: 1px;
 }
 #footer #bottom-left {
     display: inline;
