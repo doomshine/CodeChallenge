@@ -87,10 +87,6 @@ h4 {
     padding-left: 31px;
 }
 
-hr {
-display: inline;
-}
-
 .vertical-divider {
     position: relative;
     bottom: 3px;
@@ -159,16 +155,6 @@ display: inline;
 #user-tools ul li a:hover {
     color: #252525;
 }
-#user-tools hr {
-    display: inline;
-    padding: 0px;
-    position: relative;
-    margin: 0 9px;
-    width: 1px;
-    height: 14px;
-    border: 0;
-    border-left: 1px solid white;
-}
 /*==============================================================
                         NAVIGATION
 ==============================================================*/
@@ -184,6 +170,7 @@ display: inline;
     display: table-cell;
     width: 167px;
     height: 36px;
+    *float: left;
 }
 #nav ul li a {
     display: block;
@@ -581,18 +568,7 @@ display: inline;
 #newsletter-bottom h3 a:hover {
     color: #0084D9;
 }
-#newsletter-bottom hr {
-    display: inline;
-    position: relative;
-    top: 4px;
-    padding: 0px;
-    margin: 0 9px;
-    width: 1px;
-    height: 14px;
-    border: 0px;
-    border-left: solid 1px #282B2E;
-    background-color: #CAC9C9;
-}
+
 
 #newsletter-bottom .vertical-divider {
     font-size: 16px;
@@ -672,6 +648,7 @@ display: inline;
     display: inline;
 }
 #footer h2 {
+    float: left;
     display: inline;
     color: grey;
     font-size: 12px;
